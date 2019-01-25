@@ -1,0 +1,174 @@
+1 - Which one of the following is the right way of defining a function in PHP?
+ ans: d) function fumctionName(parameters) { function body }
+
+
+
+2 - What will happen in this function call?
+<?php
+
+   function calc($price, $tax){
+
+       $total = $price + $tax;
+ 
+  	}
+ 
+  $pricetag = 15;
+
+   $taxtag = 3;
+ 
+  calc($pricetag, $taxtag); 
+   
+   ?>
+
+ ans:  a) Call By Value
+
+
+
+3 - What will be the output of the following PHP code?
+<?php
+  
+ function calc($price, $tax="")
+ {
+
+       $total = $price + ($price * $tax);
+
+       echo "$total";
+   
+}
+   
+calc(42);
+    
+   ?>
+
+ ans: c)42
+
+
+4 - What will be the output of the following PHP code?
+
+
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+
+echo "I like " . $cars[2] . ", " . $cars[1] . " and " . $cars[0] . ".";
+
+?>
+
+ans: d) I like Toyota, BMW and Volvo.
+
+
+
+5 - What will be the output of the following PHP code?
+<?php
+
+$fname = array("Peter", "Ben", "Joe");
+
+$age = array("35", "37", "43");
+
+$c = array_combine($age, $fname);
+
+print_r($c);
+
+?>
+
+ans: d) Array ( [35] => Peter [37] => Ben [43] => Joe )
+
+
+6 - PHP’s numerically indexed array begin with position ___________
+
+ans: c) 0
+
+
+
+7 - Which of the following are correct ways of creating an array?
+
+i) state[0] = “karnataka”;
+
+ii) $state[] = array(“karnataka”);
+
+iii) $state[0] = “karnataka”;
+
+iv) $state = array(“karnataka”);
+
+ans: a) iii) and iv)
+
+
+8 - Which function will return true if a variable is an array or false if it is not?
+
+ans: b) is_array()
+
+
+9 - Which in-built function will add a value to the end of an array?
+
+ans: d) array_push()
+
+
+10 - Which function returns an array consisting of associative key/value pairs?
+
+ans: c) array_count_values()
+
+
+
+11 - The practice of separating the user from the true inner workings of an application through well-known interfaces is known as _________
+
+ans: c) Encapsulation
+
+
+12 - The practice of creating objects based on predefined classes is often referred to as..
+
+ans: d) class instantiation
+
+
+
+13 - Which one of the following property scopes is not supported by PHP?
+
+ans: a) friendly
+
+
+14 - Which one of the following can be used to instantiate an object in PHP assuming class name to be Foo?
+
+ans: c) $obj = new foo ();
+
+
+15 - Which one of the following is the right way to invoke a method?
+
+ans: a) $object->methodName();
+
+
+16 - Which of the following is/are the right way to declare a method?
+i) function functionName() { function body }
+
+ii) scope function functionName() { function body }
+
+iii) method methodName() { method body }
+
+iv) scope method methodName() { method body }
+
+ans: c) i) and ii)
+
+
+17 - PHP recognizes constructors by the name_________
+
+ans: d) function __construct()
+
+
+18 - What does PHP stand for?
+
+ans: Hypertext Preprocessor
+
+
+19 - What is the difference between == and === operator in php?
+
+ans:    The difference between the two is that '==' should be used to check if the values of the two operands are equal or not. 
+	On the other hand, '===' checks the values as well as the type of operands.
+	For example: if $a = 2; and $b = '2';
+			here $a == $b;
+			but  $a !=== $b;
+			on the other hand $a = 2; and $b = 2; 
+			here $a == $b and $a === $b;
+
+
+20 - What is a session in PHP and how do you remove data from a session?
+
+ans: Session is use for store data for individual users against a unique session ID. 
+     Remove data from Session: session_unset();
+     Remove all data from session or to destroy a session: session_destroy();
